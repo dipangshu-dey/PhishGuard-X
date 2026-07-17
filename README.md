@@ -66,58 +66,6 @@ PhishGuard-X/
 └── Project_Report.pdf
 ```
 
-> Update the folder structure above to match your actual project before publishing.
-
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/PhishGuard-X.git
-```
-
-Move into the project directory:
-
-```bash
-cd PhishGuard-X
-```
-
-Create a virtual environment:
-
-```bash
-python -m venv venv
-```
-
-Activate it:
-
-**Windows**
-
-```bash
-venv\Scripts\activate
-```
-
-**Linux/macOS**
-
-```bash
-source venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-Run the application:
-
-```bash
-streamlit run dashboard.py
-```
-
-Use the dashboard to analyze URLs or QR codes and review the generated security assessment and PDF report.
-
 ## Future Improvements
 
 - Integration with external threat intelligence feeds

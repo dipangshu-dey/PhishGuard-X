@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+streamlit
+opencv-python
+requests
+python-whois
+reportlab
+pypdf
+Pillow

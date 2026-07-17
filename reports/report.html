@@ -1,0 +1,98 @@
+
+        <html>
+        <head>
+        <title>PhishGuard X Report</title>
+        <style>
+        body { background:#0D1117;color:white;font-family:Segoe UI;padding:20px }
+        .card { background:#161B22;padding:15px;margin:10px;border-radius:8px }
+        </style>
+        </head>
+
+        <body>
+
+        <h1>🛡 PhishGuard X — Forensic Report</h1>
+        <p>Generated: 2026-04-09T02:04:46.351961</p>
+
+        <div class="card">
+        <h2>⚠️ SUSPICIOUS</h2>
+        <p>Score: 30/100</p>
+        <p>Confidence: 100.0%</p>
+        <p>Input Type: </p>
+        </div>
+
+        <div class="card">
+        <h2>🧠 Explainability</h2>
+        
+                <div class="shap-row">
+                  <span class="shap-label">Number of Dots</span>
+                  <div class="shap-bar-wrap">
+                    <div class="shap-bar" style="width:100%;background:#DA3633"></div>
+                  </div>
+                  <span class="shap-val">0.414</span>
+                </div>
+                <div class="shap-row">
+                  <span class="shap-label">URL Length</span>
+                  <div class="shap-bar-wrap">
+                    <div class="shap-bar" style="width:71%;background:#DA3633"></div>
+                  </div>
+                  <span class="shap-val">0.295</span>
+                </div>
+                <div class="shap-row">
+                  <span class="shap-label">Suspicious Keywords</span>
+                  <div class="shap-bar-wrap">
+                    <div class="shap-bar" style="width:37%;background:#DA3633"></div>
+                  </div>
+                  <span class="shap-val">0.154</span>
+                </div>
+                <div class="shap-row">
+                  <span class="shap-label">IP Address</span>
+                  <div class="shap-bar-wrap">
+                    <div class="shap-bar" style="width:15%;background:#DA3633"></div>
+                  </div>
+                  <span class="shap-val">0.066</span>
+                </div>
+                <div class="shap-row">
+                  <span class="shap-label">HTTPS Presence</span>
+                  <div class="shap-bar-wrap">
+                    <div class="shap-bar" style="width:14%;background:#DA3633"></div>
+                  </div>
+                  <span class="shap-val">0.060</span>
+                </div>
+        </div>
+
+        <div class="card">
+        <h2>🎯 MITRE ATT&CK</h2>
+        <table border="1">
+        <tr><th>ID</th><th>Name</th><th>Tactic</th><th>Confidence</th><th>Description</th></tr>
+        
+            <tr>
+              <td>{'id': 'T1566.002', 'name': 'Phishing', 'tactic': 'Credential Access', 'confidence': np.float64(100.0), 'description': 'Phishing attack via URL'}</td>
+              <td>Phishing Technique</td>
+              <td>Credential Access</td>
+              <td>HIGH</td>
+              <td>Detected phishing activity</td>
+            </tr>
+        </table>
+        </div>
+
+        <div class="card">
+        <h2>⚡ Indicators</h2>
+        <ul><li>Number of Dots: 0.414</li><li>URL Length: 0.295</li><li>Suspicious Keywords: 0.154</li><li>IP Address: 0.066</li><li>HTTPS Presence: 0.06</li></ul>
+        </div>
+
+        <div class="card">
+        <h2>🌐 Threat Intelligence</h2>
+        <p>Not Found</p>
+        </div>
+
+        <div class="card">
+        <h2>📋 Logs</h2>
+        <pre>[+] URL Analysis Started
+[ML] PHISHING (100.0%)</pre>
+        </div>
+
+        <p>Hash: be937aeff788afcc8aa97e9cd957671cb9fc12f6a6745645ada4e57ffc74bd44</p>
+
+        </body>
+        </html>
+        

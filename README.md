@@ -1,28 +1,35 @@
 # PhishGuard-X
 
-PhishGuard-X is a hybrid phishing detection system developed in Python that combines machine learning and rule-based analysis to identify malicious URLs. The application provides an interactive Streamlit dashboard where users can analyze URLs or QR codes, view risk assessments, and generate forensic PDF reports.
+PhishGuard-X is a hybrid phishing detection system developed in Python that combines Machine Learning and Rule-Based Analysis to detect phishing URLs and malicious websites. The application provides an interactive Streamlit dashboard where users can analyze URLs or QR codes, track redirect chains, detect phishing campaigns, and generate professional forensic PDF reports.
+
+---
 
 ## Objectives
 
 - Detect phishing URLs using a hybrid detection approach.
-- Combine machine learning predictions with rule-based analysis.
-- Analyze redirect chains and domain information.
-- Generate detailed forensic reports to support phishing investigations.
-- Provide an interactive dashboard for security analysis.
+- Combine Machine Learning predictions with rule-based analysis.
+- Analyze redirect chains and domain intelligence.
+- Generate detailed forensic reports for phishing investigations.
+- Provide an interactive dashboard for cybersecurity analysis.
+
+---
 
 ## Features
 
 - Hybrid phishing detection using Machine Learning and Rule-Based Analysis
-- Real-time URL analysis through a Streamlit dashboard
+- Real-time URL analysis through an interactive Streamlit dashboard
 - Random Forest-based phishing prediction
 - Redirect chain tracking
-- WHOIS domain age lookup
+- WHOIS domain age analysis
 - Trusted domain verification
 - Campaign detection using SQLite
 - QR code phishing detection
 - Risk score calculation and attack classification
+- Analytics dashboard with historical scan statistics
 - Automated PDF forensic report generation
 - Local scan history
+
+---
 
 ## Technology Stack
 
@@ -38,6 +45,8 @@ PhishGuard-X is a hybrid phishing detection system developed in Python that comb
 | Domain Intelligence | python-whois |
 | Report Generation | ReportLab, PyPDF |
 
+---
+
 ## How It Works
 
 1. Validate and sanitize the submitted URL.
@@ -52,42 +61,73 @@ PhishGuard-X is a hybrid phishing detection system developed in Python that comb
 10. Calculate the final risk score and classify the attack.
 11. Generate a forensic PDF report and display the results on the dashboard.
 
+---
+
+## 📸 Screenshots
+
+| Threat Scanner | URL Analysis |
+|----------------|--------------|
+| ![](screenshots/dashboard.png) | ![](screenshots/url_scan.png) |
+
+| Analytics Dashboard | Campaign Monitor |
+|---------------------|------------------|
+| ![](screenshots/analytics.png) | ![](screenshots/campaign.png) |
+
+### PDF Report
+
+![](screenshots/pdf_report.png)
+
+---
+
 ## Project Structure
 
 ```text
 PhishGuard-X/
-├── analyzer.py                # Main phishing analysis engine
-├── campaign_detector.py       # Campaign detection module
-├── dashboard.py               # Streamlit dashboard
-├── dataset.csv                # Training dataset
-├── explainer.py               # Detection explanation module
-├── feature_extractor.py       # URL feature extraction
-├── gui.py                     # Main application interface
-├── qr_scanner.py              # QR code phishing detection
-├── redirect_tracker.py        # Redirect chain analysis
-├── reporter.py                # PDF report generation
-├── train_model.py             # Random Forest model training
-├── url_model.pkl              # Trained ML model
-├── campaigns.db               # SQLite campaign database
-├── project_report.pdf         # Project documentation
-├── requirements.txt           # Project dependencies
+├── screenshots/
+│   ├── dashboard.png
+│   ├── url_scan.png
+│   ├── analytics.png
+│   ├── campaign.png
+│   └── pdf_report.png
+├── analyzer.py
+├── campaign_detector.py
+├── dashboard.py
+├── dataset.csv
+├── explainer.py
+├── feature_extractor.py
+├── gui.py
+├── qr_scanner.py
+├── redirect_tracker.py
+├── reporter.py
+├── train_model.py
+├── url_model.pkl
+├── campaigns.db
+├── project_report.pdf
+├── requirements.txt
 ├── README.md
 ├── LICENSE
 └── .gitignore
 ```
 
+---
+
 ## Future Improvements
 
 - Integration with external threat intelligence feeds
-- Browser extension for real-time protection
+- Browser extension for real-time phishing protection
 - REST API for automated URL scanning
-- Support for additional machine learning models
 - Cloud deployment for scalable phishing detection
+- Support for additional Machine Learning models
+
+---
 
 ## License
 
-This project is licensed under the MIT License. See the **LICENSE** file for more information.
+This project is licensed under the **MIT License**. See the **LICENSE** file for more information.
+
+---
 
 ## Author
 
 **Dipangshu Dey**
+

@@ -2,12 +2,12 @@
 
 PhishGuard-X is a hybrid phishing detection system developed in Python that combines machine learning and rule-based analysis to identify malicious URLs. The application provides an interactive Streamlit dashboard where users can analyze URLs or QR codes, view risk assessments, and generate forensic PDF reports.
 
-## Project Objectives
+## Objectives
 
 - Detect phishing URLs using a hybrid detection approach.
 - Combine machine learning predictions with rule-based analysis.
 - Analyze redirect chains and domain information.
-- Generate detailed reports to support phishing investigations.
+- Generate detailed forensic reports to support phishing investigations.
 - Provide an interactive dashboard for security analysis.
 
 ## Features
@@ -54,16 +54,26 @@ PhishGuard-X is a hybrid phishing detection system developed in Python that comb
 
 ## Project Structure
 
-```
+```text
 PhishGuard-X/
-│
-├── src/
-├── models/
-├── assets/
+├── analyzer.py                # Main phishing analysis engine
+├── campaign_detector.py       # Campaign detection module
+├── dashboard.py               # Streamlit dashboard
+├── dataset.csv                # Training dataset
+├── explainer.py               # Detection explanation module
+├── feature_extractor.py       # URL feature extraction
+├── gui.py                     # Main application interface
+├── qr_scanner.py              # QR code phishing detection
+├── redirect_tracker.py        # Redirect chain analysis
+├── reporter.py                # PDF report generation
+├── train_model.py             # Random Forest model training
+├── url_model.pkl              # Trained ML model
+├── campaigns.db               # SQLite campaign database
+├── project_report.pdf         # Project documentation
+├── requirements.txt           # Project dependencies
 ├── README.md
-├── requirements.txt
 ├── LICENSE
-└── Project_Report.pdf
+└── .gitignore
 ```
 
 ## Future Improvements
@@ -72,6 +82,7 @@ PhishGuard-X/
 - Browser extension for real-time protection
 - REST API for automated URL scanning
 - Support for additional machine learning models
+- Cloud deployment for scalable phishing detection
 
 ## License
 
@@ -80,4 +91,3 @@ This project is licensed under the MIT License. See the **LICENSE** file for mor
 ## Author
 
 **Dipangshu Dey**
-
